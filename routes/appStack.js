@@ -3,6 +3,7 @@ import {createAppContainer} from 'react-navigation';
 
 import Home from '../components/Home';
 import Counter from '../components/Counter';
+import List from '../components/List';
 
 const AppNavigator = createStackNavigator({
   Home: {
@@ -10,6 +11,9 @@ const AppNavigator = createStackNavigator({
   },
   Counter: {
     screen: Counter,
+  },
+  Wonders: {
+    screen: List,
   },
 });
 

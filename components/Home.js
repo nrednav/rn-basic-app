@@ -8,6 +8,10 @@ function Home(props) {
         title="Go to Counter"
         onPress={() => props.navigation.navigate('Counter')}
       />
+      <Button
+        title="Go to Wonders"
+        onPress={() => props.navigation.navigate('Wonders')}
+      />
     </View>
   );
 }
