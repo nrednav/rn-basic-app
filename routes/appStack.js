@@ -5,6 +5,7 @@ import Home from '../components/Home';
 import Counter from '../components/Counter';
 import WondersOfTheWorld from '../components/WondersOfTheWorld';
 import ViewWonder from '../components/ViewWonder';
+import ExchangeRates from '../components/ExchangeRates';
 
 const AppNavigator = createStackNavigator({
   Home: {
@@ -18,6 +19,9 @@ const AppNavigator = createStackNavigator({
   },
   ViewWonder: {
     screen: ViewWonder,
+  },
+  ExchangeRates: {
+    screen: ExchangeRates,
   },
 });
 

@@ -14,6 +14,11 @@ function Home(props) {
         style={styles.button}>
         <Text style={styles.buttonText}>Wonders of the World</Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => props.navigation.navigate('ExchangeRates')}
+        style={styles.button}>
+        <Text style={styles.buttonText}>Exchange Rates</Text>
+      </TouchableOpacity>
     </View>
   );
 }
