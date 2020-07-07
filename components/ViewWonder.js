@@ -1,7 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {ScrollView, View, Text, Image, StyleSheet} from 'react-native';
 
+import {FruitContext} from '../contexts/FruitContext';
+
 function ViewWonder({navigation}) {
+  const fruits = useContext(FruitContext);
+
   return (
     <ScrollView>
       <Image source={navigation.getParam('path')} style={styles.image} />
@@ -12,6 +16,13 @@ function ViewWonder({navigation}) {
       <Text style={styles.description}>
         {navigation.getParam('description')}
       </Text>
+      <View>
+        {fruits.map(fruit => (
+          <Text>
+            {fruit.name} - {fruit.quantity}
+          </Text>
+        ))}
+      </View>
     </ScrollView>
   );
 }
